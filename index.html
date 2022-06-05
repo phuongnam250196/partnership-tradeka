@@ -16,7 +16,9 @@
     <link rel="icon" type="image/png" href="">
     <!-- css -->
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="vendor/bootstrap-4.6.0-dist/css/bootstrap.min.css">
     <link href="css/aos.css" rel="stylesheet">
     <!-- custom css -->
@@ -29,9 +31,7 @@
         <nav class="navbar navbar-expand-xl fixed-top" id="navbar-custom">
             <div class="container">
                 <a class="navbar-brand" href="index.html"><img src="imgs/logo.png"></a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse"
-                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                    aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" id="hamburger-icon">
                     <img src="imgs/toggle.png" alt="">
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -61,30 +61,82 @@
                     <a href="#" class="btn-link ">Register</a>
                     <div class="dropdown">
                         <div class="dropdown-toggle" data-toggle="dropdown">
-                          <img src="./imgs/ic_en.png" alt="">
+                            <img src="./imgs/ic_en.png" alt="">
                         </div>
                         <div class="dropdown-menu dropdown-menu-right">
-                          <a class="dropdown-item" href="#"><img src="./imgs/ic_en.png" alt=""></a>
-                          <a class="dropdown-item" href="#"><img src="./imgs/ic_en.png" alt=""></a>
+                            <a class="dropdown-item" href="#"><img src="./imgs/ic_en.png" alt=""></a>
+                            <a class="dropdown-item" href="#"><img src="./imgs/ic_en.png" alt=""></a>
                         </div>
-                      </div>
+                    </div>
                 </div>
             </div>
         </nav>
     </header>
-   
+
+    <div class="sidebar toggle" id="sidebars">
+        <div class="close-icon" id="close" onclick="closeNav()">
+            X
+        </div>
+
+        <ul class="links">
+            <li class="link active">
+                <a href="#">Home</a>
+            </li>
+            <li class="link">
+                <a href="#">About</a>
+            </li>
+            <li class="link">
+                <a href="#">Trading</a>
+            </li>
+            <li class="link">
+                <a href="#">Partnership</a>
+            </li>
+            <li class="link">
+                <a href="#">Education & Research</a>
+            </li>
+            <li class="link">
+                <a href="#">Support</a>
+            </li>
+            <li class="link2">
+                <div class="form-inline">
+                    <a href="#" class="btn-link ">Login</a>
+                    <a href="#" class="btn-link ">Register</a>
+                    <div class="dropdown">
+                        <div class="dropdown-toggle" data-toggle="dropdown">
+                            <img src="./imgs/ic_en.png" alt="">
+                        </div>
+                        <div class="dropdown-menu dropdown-menu-right">
+                            <a class="dropdown-item" href="#"><img src="./imgs/ic_en.png" alt=""></a>
+                            <a class="dropdown-item" href="#"><img src="./imgs/ic_en.png" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <section id="banner">
+        <div class="container">
+            <div class="box">
+                <h1 class="title">Partnership</h1>
+                <p class="text">Home | Partnership</p>
+            </div>
+        </div>
+    </section>
 
     <main id="swapper">
         <div class="container">
             <section id="benefits">
                 <div class="box-title">
-                    <p class="desc">Tradeska prides itself on providing its introducing partners with the key support and services necessary to build a strong client base and a competitive revenue stream.</p>
+                    <p class="desc">Tradeska prides itself on providing its introducing partners with the key support
+                        and services necessary to build a strong client base and a competitive revenue stream.</p>
                     <h1 class="title">Benefits of partnering with Tradeska</h1>
                 </div>
                 <div class="list">
                     <div class="child">
                         <img src="./imgs/ic_rounded.png" alt="" class="rounded">
-                        <div class="text">Flexible pay-outs monitoring and reporting customer accounts with attractive real-time rebate compensations</div>
+                        <div class="text">Flexible pay-outs monitoring and reporting customer accounts with attractive
+                            real-time rebate compensations</div>
                     </div>
                     <div class="child">
                         <img src="./imgs/ic_rounded.png" alt="" class="rounded">
@@ -92,7 +144,8 @@
                     </div>
                     <div class="child">
                         <img src="./imgs/ic_rounded.png" alt="" class="rounded">
-                        <div class="text">Zero Set-Up Fees To Join - Get started right away without any previous experience</div>
+                        <div class="text">Zero Set-Up Fees To Join - Get started right away without any previous
+                            experience</div>
                     </div>
                     <div class="child">
                         <img src="./imgs/ic_rounded.png" alt="" class="rounded">
@@ -108,7 +161,7 @@
                     <a href="#" class="btn-cus">Become an Introducer</a>
                 </div>
             </section>
-    
+
             <section id="copy_trade">
                 <div class="row">
                     <div class="col-lg-6">
@@ -139,11 +192,11 @@
                                 <img src="./imgs/ic_5.png" alt="" class="imag">
                                 <div class="text">Free live support</div>
                             </div>
-                        </div>                 
+                        </div>
                     </div>
                 </div>
             </section>
-    
+
             <section id="howitworks">
                 <div class="box-title">
                     <div class="title">How it works?</div>
@@ -190,7 +243,7 @@
                     <a href="#" class="btn-cus">CopyTrade Now</a>
                 </div>
             </section>
-    
+
             <section id="liquidity">
                 <div class="box-title">
                     <h3 class="title">Liquidity Providers</h3>
@@ -246,26 +299,34 @@
                 <div class="col-xl-9">
                     <ul class="nav">
                         <li class="nav-item">
-                          <a class="nav-link" href="#">Home</a>
+                            <a class="nav-link" href="#">Home</a>
                         </li>
                         <li class="nav-item">
-                          <a class="nav-link" href="#">About</a>
+                            <a class="nav-link" href="#">About</a>
                         </li>
                         <li class="nav-item">
-                          <a class="nav-link" href="#">Trading</a>
+                            <a class="nav-link" href="#">Trading</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Education & Research</a>
-                          </li>
-                          <li class="nav-item">
+                        </li>
+                        <li class="nav-item">
                             <a class="nav-link" href="#">Contact us</a>
-                          </li>
-                      </ul>
-                      <div class="content">
-                            <p>Risk Warning: Contracts for Difference (‘CFD’) is financial products that enables investors to trade on margin. CFD Trading carries a high degree of risk. It is possible to lose all your capital. These products may not be suitable for everyone and you should ensure that you understand the risks involved. Please think carefully and seek independent expert advice if necessary.</p>
-                            <p>Disclaimer: The content of this page is for information purposes only and it is not intended as a recommendation, opinion or advice. We are not financial advisor and all services are provided on an execution only basis. The customer carries the sole responsibility for all the investments that are carried out at Fnory.</p>
-                            <p>You need to be 18 years old or legal age as determined by the laws of the country where you live in order to become our client.</p>
-                      </div>
+                        </li>
+                    </ul>
+                    <div class="content">
+                        <p>Risk Warning: Contracts for Difference (‘CFD’) is financial products that enables investors
+                            to trade on margin. CFD Trading carries a high degree of risk. It is possible to lose all
+                            your capital. These products may not be suitable for everyone and you should ensure that you
+                            understand the risks involved. Please think carefully and seek independent expert advice if
+                            necessary.</p>
+                        <p>Disclaimer: The content of this page is for information purposes only and it is not intended
+                            as a recommendation, opinion or advice. We are not financial advisor and all services are
+                            provided on an execution only basis. The customer carries the sole responsibility for all
+                            the investments that are carried out at Fnory.</p>
+                        <p>You need to be 18 years old or legal age as determined by the laws of the country where you
+                            live in order to become our client.</p>
+                    </div>
                 </div>
             </div>
             <div class="last">
@@ -289,13 +350,14 @@
 
     <!-- js -->
     <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
     <script type="text/javascript" src="vendor/bootstrap-4.6.0-dist/js/bootstrap.min.js"></script>
     <script src="js/jquery.easing.1.3.js"></script>
     <script src="js/aos.js"></script>
     <script src="js/main.js"></script>
     <script src="vendor/jquery.lazy-master/jquery.lazy.min.js"></script>
     <script>
-        
+
 
     </script>
     <script>
@@ -303,10 +365,38 @@
             easing: 'ease-out-back',
             duration: 1000
         });
-        
+
         $(function () {
             $('.lazy').lazy();
         });
+    </script>
+
+    <script>
+        const hamburgerMenu = document.getElementById("hamburger-icon");
+        const link = document.querySelectorAll(".link");
+        const closeBtn = document.getElementById("close");
+
+        for (let i = 0; i < link.length; i++) {
+            link[i].addEventListener("click", function () {
+                var current = document.getElementsByClassName("active");
+                current[0].className = current[0].className.replace(" active", "");
+                this.className += " active";
+            });
+        }
+
+        // Menu
+        hamburgerMenu.addEventListener("click", function () {
+            const sidebar = document.getElementById("sidebars");
+            sidebar.classList.toggle("toggle");
+            document.getElementById("navbar-custom").classList.toggle("bgHeader");
+        });
+
+        //   close icon
+        function closeNav() {
+            const sidebar = document.getElementById("sidebars");
+            sidebar.classList.toggle("toggle");
+        }
+
     </script>
 
 </body>
